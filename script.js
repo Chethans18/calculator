@@ -5,14 +5,31 @@ let firstNumber = 0, secondNumber = 0, operator;
 
 function display(value) {
     let display = document.querySelector('#display')
-    display.value += value
+    display.value += value;
 }
+
 //function to clear the values in the display
 const clear = document.querySelector('#clear')
 clear.addEventListener('click', () => {
     const display = document.querySelector('#display');
     display.value = "";
 });
+
+
+//function to delet single element
+const delet = document.querySelector('#delet')
+delet.addEventListener('click', () => {
+    const display = document.querySelector('#display');
+    display.value = display.value.slice(0, -1);
+});
+
+
+//function to calculate
+const equals = document.querySelector('#equals')
+equals.addEventListener('click', () => {
+    const display = document.querySelector('#display');
+});
+
 
 const one = document.querySelector('#one');
 one.addEventListener('click', () => {
