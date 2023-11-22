@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+h1 {
+
+    text-align: center;
+    margin: 10px;
+}
+
 #container {
     width: 250px;
     margin: 20px auto;
