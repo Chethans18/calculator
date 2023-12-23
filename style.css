@@ -51,6 +51,7 @@ button {
     background-color: black;
     color: white;
     flex: 1;
+    border: 5px solid white;
 }
 
 .row2 {

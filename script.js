@@ -28,6 +28,11 @@ delet.addEventListener('click', () => {
 const equals = document.querySelector('#equals')
 equals.addEventListener('click', () => {
     const display = document.querySelector('#display');
+    try {
+        display.value = eval(display.value);
+    } catch (error) {
+        display.value = 'Error';
+    }
 });
 
 
@@ -96,12 +101,12 @@ sub.addEventListener('click', () => {
 });
 const multiply = document.querySelector('#multiply');
 multiply.addEventListener('click', () => {
-    display('X');
+    display('*');
 
 });
 const divide = document.querySelector('#divide');
 divide.addEventListener('click', () => {
-    display('÷');
+    display('/');
 
 });
 
